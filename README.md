@@ -1,34 +1,34 @@
--# SQL_assigment1
+-# SQL_assigment1<br>
 
 
-testdb=# \q
-temporaryadmin@C02G10CXML86 ~ % createdb "Digital Career Institute"
-temporaryadmin@C02G10CXML86 ~ % psql "Digital Career Institute" 
+testdb=# \q<br>
+temporaryadmin@C02G10CXML86 ~ % createdb "Digital Career Institute"<br>
+temporaryadmin@C02G10CXML86 ~ % psql "Digital Career Institute" <br>
 
 
-Digital Career Institute=# \q
+Digital Career Institute=# \q<br>
 
-temporaryadmin@C02G10CXML86 ~ % psql
+temporaryadmin@C02G10CXML86 ~ % psql<br>
 
-temporaryadmin=# ALTER DATABASE "Digital Career Institute" RENAME TO dci;
-ALTER DATABASE
+temporaryadmin=# ALTER DATABASE "Digital Career Institute" RENAME TO dci;<br>
 
-temporaryadmin-# \q
-temporaryadmin@C02G10CXML86 ~ % psql dci
-psql (14.1)
-Type "help" for help.
+
+temporaryadmin-# \q<br>
+temporaryadmin@C02G10CXML86 ~ % psql dci<br>
+
 
 dci=# SELECT current_schema();
  current_schema 
 ----------------
  public
-(1 row)
+(1 row) <br>
+
 
 dci=# SHOW search_path;
    search_path   
 -----------------
  "$user", public
-(1 row)
+(1 row) <br>
 
 
 dci=# CREATE SCHEMA students;
