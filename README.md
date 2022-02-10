@@ -30,7 +30,7 @@ dci=# SHOW search_path;
  "$user", public
 (1 row) <br>
 
-
+**CREATE Schema**
 dci=# CREATE SCHEMA students;
 CREATE SCHEMA <br>
 dci=# CREATE SCHEMA courses;
@@ -39,6 +39,7 @@ dci=# CREATE SCHEMA partners;
 CREATE SCHEMA<br>
 dci=# CREATE SCHEMA sales;
 CREATE SCHEMA<br>
+
 
 **CREATE TABLE**
 
