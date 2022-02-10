@@ -48,53 +48,56 @@ dci(# active boolean, <br>
 dci(# startDate date);  <br>
 
 CREATE TABLE
-dci=# CREATE TABLE students.python(
-dci(# name varchar (50),
-dci(# active boolean,
-dci(# startDate date);
+dci=# CREATE TABLE students.python(. <br>
+dci(# name varchar (50), <br>
+dci(# active boolean, <br>
+dci(# startDate date); <br>
+
 CREATE TABLE
-dci=# CREATE TABLE courses.frontEnd(
-dci(# name varchar (50),
-dci(# duration int);
+dci=# CREATE TABLE courses.frontEnd(<br>
+dci(# name varchar (50),<br>
+dci(# duration int);<br>
+
 CREATE TABLE
-dci=# CREATE TABLE courses.backEnd(
-dci(# name varchar (50),
-dci(# duration int);
+dci=# CREATE TABLE courses.backEnd(<br>
+dci(# name varchar (50),<br>
+dci(# duration int);<br>
+
 CREATE TABLE
-dci=# CREATE TABLE partners.company(
-dci(# name varchar (50),
-dci(# city varchar (50));
+dci=# CREATE TABLE partners.company(<br>
+dci(# name varchar (50),<br>
+dci(# city varchar (50));<br>
+
 CREATE TABLE
-dci=# CREATE TABLE partners.sales(
-dci(# department varchar (50),
-dci(# employees int);
-CREATE TABLE
+dci=# CREATE TABLE partners.sales(<br>
+dci(# department varchar (50),<br>
+dci(# employees int);<br>
 
 dci=# SET search_path TO courses, public;
 SET
 
 
-**INSERT INTO**
+**INSERT INTO**<br>
 dci=# INSERT INTO backend VALUES ('Java', '12'), ('Python', '10'),('JavaScript','8');
 INSERT 0 3
 
-**CREATE INFO**
+**CREATE INFO**<br>
 dci=# CREATE TABLE sales.department();
 CREATE TABLE
 
-**REMOVE INfO**
+**REMOVE INfO**<br>
 dci=# DROP TABLE sales.department;
 DROP TABLE
 
-**INSERT INTO**
+**INSERT INTO**<br>
 dci=# INSERT INTO students.java VALUES ('Anna', 'no', '1990-01-01'), ('Klaus', 'yes','2021-09-09');
 INSERT 0 2
 
-**TRUNCATE --> truncate means remove only the data in the table, not the table**
+**TRUNCATE --> truncate means remove only the data in the table, not the table**<br>
 dci=# TRUNCATE TABLE students.java;
 TRUNCATE TABLE
 
-**RENAME TABLE**
+**RENAME TABLE**<br>
 dci=# ALTER TABLE partners.sales RENAME TO creditControl;
 ALTER TABLE
 dci=# 
